@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Petition Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <img src="neuimage.png" height="100" style="display:inline;">
+  <p style="display:inline;">
+    <table style="display:inline;">
+    <tr><td><b>Graduate School of Engineering</b></td></tr>
+    <tr><td><b>130 Snell Engineering Center</b></td></tr>
+    <tr><td>Northeastern University</td></tr>
+    <tr><td>360 Huntington Avenue</td></tr>
+    <tr><td>Boston, MA 02115-5000</td></tr>
+  </table>
+    <table align="right" style="display:inline;margin-top:35px">
+    <tr><td align="right">Phone: 617.373.2711</td></tr>
+    <tr><td align="right">Fax: 617.373.2571</td></tr>
+    <tr><td align="right">Web: www.coe.neu.edu/gse</td></tr>
+  </table>
+  </p>
+  <form class="form-inline" method="post" action="form.htm">
+      <h1 align="center">PETITION FORM</h1><hr style="border: none; border-bottom: 2px solid;">
+      <p>Follow the instructions on the next page. Use <b>fillable pdf</b> or PRINT CLEARLY to ensure your writing is legible. You must provide <b><u>all</u></b> required supporting documents before a final decision is made on your petition.</p>
+      <hr style="border: none; border-bottom: 2px solid;">
+      <div class="form-group">
+        <label for="nuid">NUID</label>
+        <input type="text" class="form-control" name="Nuid">
+      <label for="prog">Current Program/Concentration</label>
+      <input type="text" class="form-control" name="Program/Concentration"><br><br>
+      <label for="Name">Name</label>
+      <input type="text" class="form-control" name="Last Name" placeholder="Last or Family Name">
+      <input type="text" class="form-control" name="First Name" placeholder="First or Given Name">
+      <input type="text" class="form-control" name="Middle Name" placeholder="Middle Name"><br><br>
+      <label for="addr">Local Address</label>
+      <input type="text" class="form-control" name="Street/Street #" placeholder="Street/Street #">
+      <input type="text" class="form-control" name="City" placeholder="City">
+      <input type="text" class="form-control" name="State" placeholder="State">
+      <input type="text" class="form-control" name="Zip code" placeholder="Zip code"><br><br>
+      <label for="ph">Phone</label>
+      <input type="text" class="form-control" name="Phone Number">
+      <label for="mail">Husky E-Mail</label>
+      <input type="text" class="form-control" name="Husky E-Mail" placeholder="username@husky.neu.edu"><br><br>
+      <label for="deglev">Current Degree Level:</label>
+      <input type="radio" name="Current Degree Level" value="MS">&nbsp;MS
+      <input type="radio" name="Current Degree Level" value="PHD">&nbsp;PHD
+      <input type="radio" name="Current Degree Level" value="Certificate Only">&nbsp;Certificate Only
+      <input type="radio" name="Current Degree Level" value="Special Student">&nbsp;Special Student &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="International/Domestic" value="International">&nbsp;International
+      <input type="radio" name="International/Domestic" value="Domestic">&nbsp;Domestic
+    </div>
+    <hr style="border: none; border-bottom: 2px solid;">
+      <div class="checkbox">
+        <label>Check all that apply:</label><br>
+    <label><input type="checkbox" name="Check all that apply" value="Elective outside core curriculum"> Elective outside core curriculum</label><br>
+    <label><input type="checkbox" name="Check all that apply" value="Core course waive"> Core course waive</label><br>
+    <label><input type="checkbox" name="Check all that apply" value="Elective outside core curriculum"> Change in status</label><br>
+    <label><input type="checkbox" name="Check all that apply" value="Change in status"> Course repeat/official substitution</label><br>
+    <label><input type="checkbox" name="Check all that apply" value="Extension of time limit to program completion"> Extension of time limit to program completion</label><br>
+    <label><input type="checkbox" name="Check all that apply Others" value="Other (specify):"> Other (specify):</label>
+    <input type="text" class="form-control" name="Others"><br><br>
+    </div>
+    <p>1. For each course concerned, please provide the information below:</p>
+    <table class="table table-bordered">
+    <thead style="background-color:grey;">
+      <tr>
+        <th width="500" style="text-align: center">Course Name</th>
+        <th style="text-align: center">Term</th>
+        <th style="text-align: center">CRN #</th>
+        <th style="text-align: center">Course #</th>
+        <th style="text-align: center"># Credits</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td name="Course Name1" contenteditable='true'></td>
+        <td name="Term1" contenteditable='true'></td>
+        <td name="CRN #1" contenteditable='true'></td>
+        <td name="Course #1" contenteditable='true'></td>
+        <td name="# Credits1" contenteditable='true'></td>
+      </tr>
+      <tr>
+        <td name="Course Name2" contenteditable='true'></td>
+        <td name="Term2" contenteditable='true'></td>
+        <td name="CRN #2" contenteditable='true'></td>
+        <td name="Course #2" contenteditable='true'></td>
+        <td name="# Credits2" contenteditable='true'></td>
+      </tr>
+    </tbody>
+  </table>
+  <label for="petitioning">2. What are you petitioning? Please explain (attach separate sheet if necessary):</label><br>
+  <textarea name="petitioning" rows="4" cols="120"></textarea><br><br>
+  <label for="sign">3. Student signature:</label>
+  <input type="text" class="form-control" name="Student signature:">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="date">Date</label>
+  <input type="date" class="form-control" name="Date">
+<br><br>
+  <div>
+    <h4>SUBMIT PETITION AND ANY SUPPORTING DOCUMENTS TO YOUR PROGRAM ADVISOR</h4>
+    <hr style="border: none; border-bottom: 2px solid;">
+  </div>
+    <p>
+      <b><i>Program Advisor</i></b>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Recommendation:</label>
+        <input type="radio" name="Recommendation" value="Approved">&nbsp;Approved
+        <input type="radio" name="Recommendation" value="Denied">&nbsp;Denied
+    </p>
+    <label for="petsig">Signature</label>
+    <input type="text" class="form-control" name="Program Advisor Signature">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="petnam">Print Name</label>
+    <input type="text" class="form-control" name="Print Name"><br><br>
+    <label for="comm">Advisor’s comments and/or instructions</label>
+    <input type="text" class="form-control" name="Advisors comments and/or instructions">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="date">Date</label>
+    <input type="date" class="form-control" name="Advisors Date"><br><br>
+    <label for="commi">ECE Graduate Committee Chair (ECE students only)</label>
+    <input type="text" class="form-control" name="ECE Graduate Committee Chair">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="date">Date</label>
+    <input type="date" class="form-control" name="ECE Graduate Committee Date">
+  <hr style="border: none; border-bottom: 2px solid;">
+    <label><b><i>Recommendation:</b></i></label>
+    <input type="radio" name="Recommendation" value="Approved">&nbsp;Approved
+    <input type="radio" name="Recommendation" value="Denied">&nbsp;Denied
+    <input type="radio" name="Recommendation" value="No Action">&nbsp;No Action
+    <input type="radio" name="Recommendation" value="Returned for additional information">&nbsp;Returned for additional information
+    <input type="radio" name="Recommendation" value="ASC Report filed ">&nbsp;ASC Report filed
+    <br>
+    <label for="commstu">Comments to student:</label><br>
+    <textarea name="Comments to student" rows="4" cols="120"></textarea><br><br>
+    <label for="auth">Graduate school authorization</label>
+    <input type="text" class="form-control" name="Graduate school authorization">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="date">Date</label>
+    <input type="date" class="form-control" name="Graduate school authorization Date">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="effe">Effective Term</label>
+    <input type="text" class="form-control" name="Effective Term">
+    <hr style="border: none; border-bottom: 2px solid;">
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <br>
+    <br>
+  </form>
+</div>
+
+</body>
+</html>

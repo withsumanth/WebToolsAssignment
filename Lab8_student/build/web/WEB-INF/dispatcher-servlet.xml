@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+    <bean id="simpleUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/adduser.htm">addUserController</prop>
+                <prop key="/addcategory.htm">addCategoryController</prop>
+                <prop key="/addadvert.htm">addAdvertController</prop>
+                
+            </props>
+        </property>
+    </bean>
+
+    <bean id="addUserController" class="com.yusuf.spring.controller.AddUserFormController">
+        <property name="formView" value="addUserForm"/>
+        <property name="successView" value="addedUser"/>
+        <property name="commandName" value="user"/>
+        <property name="commandClass" value="com.yusuf.spring.pojo.User"/>
+        <property name="validator"><bean class="com.yusuf.spring.controller.UserValidator"/></property>
+    </bean>
+
+    <bean id="addCategoryController" class="com.yusuf.spring.controller.AddCategoryFormController">
+        <property name="formView" value="addCategoryForm"/>
+        <property name="successView" value="addedCategory"/>
+        <property name="commandName" value="category"/>
+        <property name="commandClass" value="com.yusuf.spring.pojo.Category"/>
+        <property name="validator"><bean class="com.yusuf.spring.controller.CategoryValidator"/></property>
+    </bean>
+
+    <bean id="addAdvertController" class="com.yusuf.spring.controller.AddAdvertFormController">
+        <property name="formView" value="addAdvertForm"/>
+        <property name="successView" value="addedAdvert"/>
+        <property name="commandName" value="advert"/>
+        <property name="commandClass" value="com.yusuf.spring.pojo.Advert"/>
+        <property name="validator"><bean class="com.yusuf.spring.controller.AdvertValidator"/></property>
+    </bean>
+
+   
+
+    <bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+</beans>
